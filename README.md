@@ -19,7 +19,7 @@
 ### Links
 
 - Solution URL: [https://github.com/Taktoka/shooping-cart.git](https://github.com/Taktoka/shooping-cart.git)
-- Live Site URL: []()
+- Live Site URL: [https://shooping-cart-one.vercel.app/](https://shooping-cart-one.vercel.app/)
 
 
 

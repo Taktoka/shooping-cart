@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input:focus {
+  outline: none;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #f0f0f0;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+/* header */
+header {
+  height: 90px;
+  background-color: #3c486b;
+  padding: 10px 0;
+}
+header .contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .contents .brand a {
+  color: #f0f0f0;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.contents ul {
+  display: flex;
+  align-items: center;
+  color: #f0f0f0;
+}
+.contents ul li {
+  margin-right: 15px;
+  position: relative;
+}
+.contents ul li .cart {
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+}
+.contents ul li .cart .badge {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: #ff731d;
+  left: 5px;
+  border-radius: 50%;
+  top: -15px;
+  line-height: 23px;
+  text-align: center;
+  font-size: 12px;
+  display: none;
+}
+.contents ul li a {
+  color: #f0f0f0;
+  letter-spacing: 1.5px;
+  transition: 0.5s;
+}
+
+/* product */
+.products {
+  padding: 50px 0;
+}
+.my-products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.my-products .product {
+  overflow: hidden;
+  position: relative;
+  width: 40%;
+  display: flex;
+  height: 240px;
+  padding: 15px;
+  margin: 0 20px 20px 0;
+  border: 1px solid #ccc;
+  align-items: center;
+  border-radius: 15px;
+}
+.my-products .product .img {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+.my-products .product .qty {
+  display: flex;
+  align-items: center;
+  background-color: #ff731d;
+  width: fit-content;
+  padding: 3px 5px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.my-products .product .qty i {
+  cursor: pointer;
+  font-size: 17px;
+}
+.my-products .product .img img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.my-products .product .desc {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  flex: 1;
+  margin-left: 10px;
+}
+.my-products .product .desc h3 {
+  color: #3c486b;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.my-products .product .desc p {
+  color: #3c486b;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 0 10px;
+  letter-spacing: 1.5px;
+}
+.my-products .product .actions {
+  position: absolute;
+  background-color: #ff731d;
+  display: flex;
+  padding: 2px 3px;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+  bottom: 10px;
+  right: 10px;
+  transition: all 0.5s ease 0s;
+  border-radius: 6px;
+}
+.my-products .product .actions i {
+  color: #03001c;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 3px;
+}
+.drop-div {
+  background-color: #f0f0f0;
+  width: 250px;
+  padding: 10px;
+  position: absolute;
+  right: -55px;
+  top: 35px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  border-radius: 6px;
+  display: none;
+}
+.drop-div.show {
+  display: flex;
+}
+.drop-div .drop-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.drop-menu li {
+  padding: 5px 3px;
+}
+.drop-menu p {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  color: #03001c;
+  text-transform: capitalize;
+  font-size: 19px;
+}
+.drop-menu p span {
+  background-color: #ff731d;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #f0f0f0;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.drop-div button {
+  background-color: #3c486b;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 5px auto 0;
+  width: 100%;
+}
+.drop-div a {
+  color: #f0f0f0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.del {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #03001c;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+}
+.del i {
+  color: #f0f0f0;
+}
+form {
+  width: 40%;
+  display: block;
+  margin: 100px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+}
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  font-size: 15px;
+}
+form input[type="submit"] {
+  background-color: #3c486b;
+  color: #f0f0f0;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+form input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+form input:focus {
+  outline: none;
+}
+form p {
+  display: block;
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  letter-spacing: 1.3px;
+}
+ul.user-info {
+  display: none;
+}
+.log-out {
+  cursor: pointer;
+}

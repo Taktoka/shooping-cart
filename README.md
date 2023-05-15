@@ -19,7 +19,7 @@
 ### Links
 
 - Solution URL: [https://github.com/Taktoka/shooping-cart.git](https://github.com/Taktoka/shooping-cart.git)
-- Live Site URL: [https://memory-game-bice.vercel.app/](https://memory-game-bice.vercel.app/)
+- Live Site URL: []()
 
 
 
